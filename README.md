@@ -1,4 +1,4 @@
-
+# Crys_Rep_Enrich
 ## Enriching FTCP Crystal Representations via Multi-Modal Self-Supervised Learning
 
 ---
@@ -12,6 +12,26 @@ This repository provides the codebase, evaluation scripts, and experimental stru
 The work introduces a hierarchical multi-modal self-supervised learning (SSL) framework that enriches the high-dimensional Fourier-Transformed Crystallographic Properties (FTCP) representation into compact, information-dense features without using any property labels.
 
 The framework decomposes FTCP into six physically motivated modalities, trains specialized neural architectures via 13 self-supervised pretext tasks, and produces enriched representations that generalize across downstream materials property prediction tasks.
+
+---
+
+## 👥 Authors
+
+- **Danial Ebrahimzadeh** (University of Oklahoma) — [danial.ebrahimzadeh@ou.edu](mailto:danial.ebrahimzadeh@ou.edu)
+- **Sarah Sharif** (University of Oklahoma)
+- **Yaser Mike Banad** (University of Oklahoma) — Corresponding Author [bana@ou.edu](mailto:bana@ou.edu)
+
+---
+
+## 📄 Abstract
+
+Accelerating the discovery of functional inorganic materials requires machine learning models that can extract physically meaningful patterns from crystallographic data without relying on costly labeled property measurements. High-dimensional crystallographic representations such as the Fourier-Transformed Crystallographic Properties (FTCP) are statistically intractable for direct machine learning due to various challenges such as extreme dimensionality, heterogeneous sparsity, and redundant features. We introduce a hierarchical multi-modal self-supervised learning framework that decomposes FTCP into six physically motivated modalities and trains specialized neural architectures through 13 pretext tasks, producing enriched representations without requiring any property labels. Applied to 129,473 inorganic crystalline materials, the framework achieves a **12.3× compression** while demonstrating strong generalization as six of thirteen pretext tasks show test performance equal to or exceeding validation performance. Downstream evaluation across three complementary scenarios establishes the practical value of the enriched features. With simple linear regression, enriched features achieve stable formation energy RMSE of 0.826 eV/atom across all data splits while raw FTCP fails catastrophically, with a 37–40× computational speedup. Feature attribution via SHAP reveals that SSL features contribute 32.81% of predictive importance in a hybrid model despite comprising only 7.5% of feature dimensions, confirming non-redundant complementarity with raw FTCP. Under extreme data scarcity (1% of training data), a regularized residual model using enriched features achieves meaningful property prediction improvements, demonstrating effective transfer learning with 1% labeled samples. These results demonstrate that self-supervised data enrichment is a practical and principled pathway toward general-purpose crystallographic representations for high-throughput materials discovery.
+
+---
+
+## 📜 License
+
+This repository is released under the **MIT License**.
 
 ---
 
@@ -122,8 +142,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 ## 📬 Contact
 
 **Corresponding Author:**
-Yaser Mike Banad — bana@ou.edu
+Yaser Mike Banad — [bana@ou.edu](mailto:bana@ou.edu)
 
 **First Author:**
-Danial Ebrahimzadeh — danial.ebrahimzadeh@ou.edu
-
+Danial Ebrahimzadeh — [danial.ebrahimzadeh@ou.edu](mailto:danial.ebrahimzadeh@ou.edu)
