@@ -31,7 +31,7 @@ Accelerating the discovery of functional inorganic materials requires machine le
 
 ## 📜 License
 
-This repository is released under the **MIT License**.
+This repository is released under the **INQUIRE Lab Academic Research License** (see `LICENSE`). Non-commercial academic use only. Commercial use, redistribution, and derivative works require prior written permission, and no patent rights are granted.
 
 ---
 
